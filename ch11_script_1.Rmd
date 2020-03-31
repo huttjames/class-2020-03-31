@@ -104,6 +104,11 @@ Here is an example: https://rpubs.com/ruchajoshi/regional_poverty
 
 ```{r}
 
+ggplot(county, aes(poverty, less_than_hs, color = region)) + 
+  geom_point() + 
+  theme_classic() + 
+  transition_states(region, transition_length = 2, state_length = 1)
+
 ```
 
 
